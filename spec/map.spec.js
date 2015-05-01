@@ -2,11 +2,6 @@
 
 describe('map', function() {
 
-  var map;
-  beforeEach(function() {
-    map = require('../lib/map');
-  });
-
   it('can apply a function to each element', function() {
     expect(map([1,2,3], function(element) {element * element})).toEqual([1,4,9]);
   });
